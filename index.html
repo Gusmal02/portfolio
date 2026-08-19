@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Gustavo Maldonado — Security AI/ML Engineer</title>
+<meta name="description" content="Security AI/ML Engineer: caza de amenazas con IA, pentesting autónomo y detección de anomalías en grafos. 17 años en infraestructura TI. Ciudad de México." />
+<meta name="theme-color" content="#05070e" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<canvas id="net"></canvas>
+<div class="aura a"></div><div class="aura b"></div>
+<div class="grain"></div>
+<div class="vignette"></div>
+<div id="glow"></div>
+<div id="bar"></div>
+
+<div class="wrap">
+  <nav id="nav">
+    <div class="container">
+      <a class="brand" href="#top"><span class="mark"></span> Gustavo&nbsp;Maldonado</a>
+      <div class="nav-links">
+        <a href="#about" data-i18n="nav_about">Perfil</a>
+        <a href="#stack" data-i18n="nav_stack">Stack</a>
+        <a href="#proyectos" data-i18n="nav_projects">Proyectos</a>
+        <a href="#logros" data-i18n="nav_logros">Logros</a>
+        <a class="nav-cta" href="#contacto" data-i18n="nav_cta">Hablemos →</a>
+        <button id="langToggle" class="lang-toggle" type="button">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="top">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <span class="eyebrow"><span class="ping"></span> <span data-i18n="hero_eyebrow">Security AI/ML Engineer · Ciudad de México</span></span>
+          <h1 data-i18n="hero_h1">Construyo <span class="g">plataformas de seguridad con IA</span> que piensan, ejecutan y dejan registro de todo.</h1>
+          <p class="lede" data-i18n="hero_lede">Caza de amenazas con memoria episódica, pentesting autónomo con auditoría inmutable y detección de anomalías en grafos financieros. <b>17 años en infraestructura TI</b> y un portafolio respaldado por más de <b>1,200 tests automatizados</b>.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#proyectos" data-i18n="hero_cta1">Ver lo que construyo →</a>
+            <a class="btn btn-ghost" href="#contacto" data-i18n="hero_cta2">Hablemos</a>
+          </div>
+          <div class="socials">
+            <a href="https://github.com/Gusmal02" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="https://linkedin.com/in/gustavomaldonadov" target="_blank" rel="noopener">LinkedIn ↗</a>
+            <a href="mailto:gustavo.a.maldonado.v@gmail.com">Email ↗</a>
+          </div>
+          <div class="hero-meta">
+            <div><b>17+</b><span data-i18n="hero_m1">años en infraestructura TI</span></div>
+            <div><b>1,200+</b><span data-i18n="hero_m2">tests automatizados</span></div>
+            <div><b>6/6</b><span data-i18n="hero_m3">detección en benchmark (Momus)</span></div>
+            <div><b>47 min</b><span data-i18n="hero_m4">alerta temprana (NEURAL-RMF)</span></div>
+          </div>
+        </div>
+        <div class="hero-visual terminal-wrap">
+          <div class="terminal" aria-label="terminal">
+            <div class="term-bar"><span class="t-dot r"></span><span class="t-dot y"></span><span class="t-dot g"></span><span class="t-title">gustavo@maldonado: ~/projects</span></div>
+            <div class="term-body" id="termBody">
+              <div class="t-line"><span class="t-prompt">$</span> whoami</div>
+              <div class="t-out">security-ai-ml-engineer</div>
+              <div class="t-line"><span class="t-prompt">$</span> cat stack.txt</div>
+              <div class="t-out">Python · LangGraph · PyTorch · GCP · AWS · MCP</div>
+              <div class="t-line"><span class="t-prompt">$</span> ls projects/</div>
+              <div class="t-out">pantheon&nbsp;&nbsp;ares&nbsp;&nbsp;helix&nbsp;&nbsp;momus&nbsp;&nbsp;fraud-sentinel</div>
+              <div class="t-line"><span class="t-prompt">$</span> ./run pantheon --hunt</div>
+              <div class="t-out ok">[OK] 397 tests · fail-closed by design</div>
+              <div class="t-line"><span class="t-prompt">$</span> ./run helix --graph-aml</div>
+              <div class="t-out ok">[OK] AUC 0.9647 · Elliptic 0.9624</div>
+              <div class="t-cursor">█</div>
+            </div>
+          </div>
+          <div class="chip c1"><span class="ic">🛡️</span><div><small data-i18n="chip1a">Plataformas</small><b>Pantheon · Ares · Helix</b></div></div>
+          <div class="chip c2"><span class="ic">🧠</span><div><small data-i18n="chip2a">Investigación</small><b>NEURAL-RMF · EQ-RMF</b></div></div>
+          <div class="chip c3"><span class="ic">✓</span><div><small data-i18n="chip3a">Portafolio</small><b>Métricas y suites de tests</b></div></div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MARQUEE -->
+  <div class="marquee">
+    <div class="track" id="marqueeTrack"></div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="sec-head reveal">
+        <div class="kicker" data-i18n="about_kick">Quién soy</div>
+        <h2 data-i18n="about_h2">De <span class="g">17 años en infraestructura</span> a plataformas de IA para ciberseguridad.</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-body reveal">
+          <p data-i18n="about_p1">Soy <b>Gustavo Maldonado</b>, Security AI/ML Engineer en la Ciudad de México. Construyo sistemas de IA de grado producción: <b>caza de amenazas con memoria episódica</b>, <b>pentesting autónomo con auditoría inmutable</b> y <b>detección de anomalías en grafos financieros</b>.</p>
+          <p data-i18n="about_p2">Aplico criterio de seguridad desde el diseño —Bandit SAST, Docker no-root, CI/CD, NIST AC-6— y tengo investigación propia en curso: alerta temprana de crisis epilépticas y detección sísmica en colaboración con el <b>NIED de Japón</b>.</p>
+        </div>
+        <div class="about-cards reveal">
+          <div class="acard"><div class="ic">🛡️</div><b data-i18n="about_c1t">Ciberseguridad</b><span data-i18n="about_c1s">Threat hunting, pentesting, SAST, NIST AC-6, SIEM</span></div>
+          <div class="acard"><div class="ic">🤖</div><b data-i18n="about_c2t">IA Generativa</b><span data-i18n="about_c2s">RAG, agentes LangGraph, Tool Calling, MCP</span></div>
+          <div class="acard"><div class="ic">🧠</div><b data-i18n="about_c3t">Investigación</b><span data-i18n="about_c3s">NEURAL-RMF · EQ-RMF (NIED, Japón)</span></div>
+          <div class="acard"><div class="ic">☁️</div><b data-i18n="about_c4t">Grado producción</b><span data-i18n="about_c4s">Docker no-root, CI/CD, Prometheus, Grafana</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section id="stack">
+    <div class="container">
+      <div class="sec-head reveal">
+        <div class="kicker" data-i18n="stack_kick">Stack técnico</div>
+        <h2 data-i18n="stack_h2">Tecnologías con las que <span class="g">construyo y protejo</span>.</h2>
+      </div>
+      <div class="stack-grid" id="stackGrid"></div>
+    </div>
+  </section>
+
+  <!-- PROYECTOS -->
+  <section id="proyectos">
+    <div class="container">
+      <div class="sec-head reveal">
+        <div class="kicker" data-i18n="proj_kick">Proyectos</div>
+        <h2 data-i18n="proj_h2">Plataformas de <span class="g">seguridad y ML</span> en mi portafolio.</h2>
+        <p class="section-lede" data-i18n="proj_lede">Sistemas de IA con ownership completo, métricas publicadas y suites de pruebas. Cada acción con trazabilidad.</p>
+      </div>
+      <div class="proj" id="projFlagship"></div>
+      <div class="more-head reveal">
+        <div class="kicker" data-i18n="proj_more_kick">Más soluciones</div>
+      </div>
+      <div class="more" id="projMore"></div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="band">
+    <div class="container stats" id="statsBand"></div>
+  </div>
+
+  <!-- LOGROS -->
+  <section id="logros">
+    <div class="container">
+      <div class="sec-head reveal">
+        <div class="kicker" data-i18n="logr_kick">Logros y certificaciones</div>
+        <h2 data-i18n="logr_h2">Hitos que <span class="g">respaldan el trabajo</span>.</h2>
+      </div>
+      <div class="timeline" id="logrosList"></div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="final" id="contacto">
+    <div class="container">
+      <div class="kicker" data-i18n="cta_kick">Contacto</div>
+      <h2 data-i18n="cta_h2">¿Construimos <span class="g">el siguiente sistema</span>?</h2>
+      <p class="section-lede" data-i18n="cta_lede">Si buscas seguridad con IA, analítica de datos o agentes LLM en producción, hablemos.</p>
+      <div class="contact-info">
+        <a href="mailto:gustavo.a.maldonado.v@gmail.com">✉ gustavo.a.maldonado.v@gmail.com</a>
+        <span>☏ +52 55 4130 8278</span>
+        <a href="https://github.com/Gusmal02" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="https://linkedin.com/in/gustavomaldonadov" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+      <div class="cta-row" style="justify-content:center; margin-top:30px">
+        <a class="btn btn-primary" href="mailto:gustavo.a.maldonado.v@gmail.com" data-i18n="cta_btn">Escríbeme →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <span>© 2026 <b>Gustavo Maldonado</b></span>
+      <span><a href="#top">↑</a></span>
+    </div>
+  </footer>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
