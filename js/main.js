@@ -136,6 +136,16 @@
         m: "AUC 0.9647 · AMLSim", b1: "Each node receives a rotation in S³: illicit nodes generate distinguishable geometric patterns (torque, instability, identity deviation). Automatic model selection (Helix/SAGE/GCN/MLP) based on graph density.",
         b2: "NEXUS and SONAR: semi-supervised scorers that propagate risk from confirmed seeds without retraining. AUC 0.9624 (Elliptic), 0.9565 (PaySim), 0.8899 (NF-UQ-NIDS)." },
       tech: ["Python", "PyTorch", "scikit-learn", "S³", "ChebyshevFNO", "GraphSAGE/GCN"]
+    },
+    {
+      n: "04", badge: "Autonomous Dev", cat: "Agentes · IA",
+      es: { t: "Sofos", tagline: "Co-desarrollador autónomo: describes tu idea y Sofos genera la aplicación completa.",
+        m: "19 agentes · 17 nodos · 126 tests", b1: "Sistema multi-agente orquestado en LangGraph que convierte una descripción en lenguaje natural (o un spec JSON) en un proyecto fullstack listo para ejecutar: PostgreSQL con migraciones, API REST en FastAPI, frontend React, Docker Compose y tests.",
+        b2: "War Room con memoria semántica y episódica, router de modelos LLM, edición incremental de proyectos vía architecture.json e integración con Momus QA que bloquea entregas con hallazgos BLOCKER. CI y export de datasets QLoRA." },
+      en: { t: "Sofos", tagline: "Autonomous co-developer: describe your idea and Sofos builds the whole app.",
+        m: "19 agents · 17 nodes · 126 tests", b1: "Multi-agent system orchestrated with LangGraph that turns a natural-language description (or a JSON spec) into a runnable fullstack project: PostgreSQL with migrations, FastAPI REST API, React frontend, Docker Compose, and tests.",
+        b2: "War Room with semantic and episodic memory, an LLM model router, incremental project editing via architecture.json, and Momus QA integration that blocks deliveries on BLOCKER findings. CI and QLoRA dataset export." },
+      tech: ["Python 3.12", "LangGraph", "Ollama", "FastAPI", "React", "Docker", "Qdrant"]
     }
   ];
 
@@ -153,7 +163,13 @@
     { es: { t: "NEURAL-RMF", d: "Alerta temprana de crisis epilépticas focales: ventana promedio de 47 min antes de la crisis." },
       en: { t: "NEURAL-RMF", d: "Early warning for focal epileptic crises: average window of 47 min before onset." }, tag: "Research" },
     { es: { t: "EQ-RMF", d: "Detección temprana de sismos en investigación colaborativa con el NIED de Japón." },
-      en: { t: "EQ-RMF", d: "Early earthquake detection, collaborative research with NIED (Japan)." }, tag: "Research" }
+      en: { t: "EQ-RMF", d: "Early earthquake detection, collaborative research with NIED (Japan)." }, tag: "Research" },
+    { es: { t: "Pharma-Agent-Stack", d: "Automatización de pedidos farmacéuticos con RAG empresarial (LangGraph, Gemini, Vertex AI Vector Search). Doble modo: nube o on-premise para datos sensibles." },
+      en: { t: "Pharma-Agent-Stack", d: "Pharmaceutical order automation with enterprise RAG (LangGraph, Gemini, Vertex AI Vector Search). Dual mode: cloud or on-premise for sensitive data." }, tag: "RAG · Agentes", link: "https://github.com/Gusmal02/pharma-agent-stack" },
+    { es: { t: "Fraude IEEE-CIS", d: "Fraude en e-commerce (IEEE-CIS): arquitectura neuro-simbólica en 3 capas (Isolation Forest + LightGBM) para minimizar falsos positivos." },
+      en: { t: "IEEE-CIS Fraud", d: "E-commerce fraud (IEEE-CIS): 3-layer neuro-symbolic architecture (Isolation Forest + LightGBM) to minimize false positives." }, tag: "Fraude · ML", link: "https://github.com/Gusmal02/prevencion-fraude-neurosimbolico" },
+    { es: { t: "AML Monitor", d: "Pipeline AML/CFT de monitoreo transaccional: capas basadas en reglas + K-Means no supervisado + DevSecOps con tests y CI." },
+      en: { t: "AML Monitor", d: "AML/CFT transaction monitoring pipeline: rule-based layers + unsupervised K-Means + DevSecOps with tests and CI." }, tag: "AML · Fintech", link: "https://github.com/Gusmal02/prevencion_lavado_dinero" }
   ];
 
   var STATS = [
@@ -271,7 +287,7 @@
   var TERM = [
     { cmd: "whoami", out: "security-ai-ml-engineer" },
     { cmd: "cat stack.txt", out: "Python · LangGraph · PyTorch · GCP · AWS · MCP" },
-    { cmd: "ls projects/", out: "pantheon  ares  helix  momus  fraud-sentinel" },
+    { cmd: "ls projects/", out: "pantheon  ares  helix  sofos  momus  fraud-sentinel" },
     { cmd: "./run pantheon --hunt", out: "[OK] 397 tests · fail-closed by design", ok: true },
     { cmd: "./run helix --graph-aml", out: "[OK] AUC 0.9647 · Elliptic 0.9624", ok: true }
   ];
