@@ -19,7 +19,6 @@ function allowedOrigin(request, env) {
 }
 
 function buildSystem(lang) {
-  const base = PROFILE[lang] || PROFILE.es;
   return [
     "Eres el asistente del portafolio de Gustavo Maldonado, Security AI/ML Engineer.",
     "Responde preguntas sobre su perfil, proyectos, stack, logros y contacto usando SOLO el contexto proporcionado.",
@@ -32,18 +31,17 @@ function buildSystem(lang) {
     "- Si te desvían del tema del portafolio, vuelve amablemente a él.",
     "",
     "CONTEXTO DEL PORTAFOLIO:",
-    base
+    PROFILE[lang] || PROFILE.es
   ].join("\n\n");
 }
 
-function toContents(messages) {
+function toMessages(messages) {
   const out = [];
   (messages || []).forEach(function (m) {
     if (!m || !m.content) return;
-    const role = m.role === "assistant" ? "model" : "user";
-    out.push({ role: role, parts: [{ text: String(m.content) }] });
+    out.push({ role: m.role === "assistant" ? "assistant" : "user", content: String(m.content) });
   });
-  if (!out.length) out.push({ role: "user", parts: [{ text: "Hola" }] });
+  if (!out.length) out.push({ role: "user", content: "Hola" });
   return out;
 }
 
@@ -94,38 +92,30 @@ export default {
     }
 
     const lang = body.lang === "en" ? "en" : "es";
-    const system = buildSystem(lang);
-    const contents = toContents(body.messages);
-    const model = env.GEMINI_MODEL || "gemini-2.5-flash-lite";
-    const url = "https://generativelanguage.googleapis.com/v1beta/models/" +
-      model + ":streamGenerateContent?alt=sse";
-
-    const upstream = await fetch(url, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "x-goog-api-key": env.GEMINI_API_KEY || ""
-      },
-      body: JSON.stringify({
-        systemInstruction: { parts: [{ text: system }] },
-        contents: contents,
-        generationConfig: { temperature: 0.4, maxOutputTokens: 1024 }
-      })
-    });
+    const messages = [{ role: "system", content: buildSystem(lang) }].concat(toMessages(body.messages));
+    const model = env.AI_MODEL || "@cf/meta/llama-4-scout-17b-16e-instruct";
 
     const streamHeaders = Object.assign({}, h, {
       "Content-Type": "text/plain; charset=utf-8",
       "Cache-Control": "no-store"
     });
 
-    if (!upstream.ok) {
-      const detail = await upstream.text();
-      return new Response(JSON.stringify({ error: "upstream", detail: detail.slice(0, 500) }), {
+    let upstream;
+    try {
+      upstream = await env.AI.run(model, {
+        messages: messages,
+        stream: true,
+        max_tokens: 1024,
+        temperature: 0.4
+      });
+    } catch (e) {
+      const detail = String((e && e.message) || e).slice(0, 500);
+      return new Response(JSON.stringify({ error: "upstream", detail: detail }), {
         status: 502, headers: streamHeaders
       });
     }
 
-    const reader = upstream.body.getReader();
+    const reader = upstream.getReader();
     const decoder = new TextDecoder();
     const encoder = new TextEncoder();
     const stream = new ReadableStream({
@@ -145,10 +135,9 @@ export default {
               if (!payload || payload === "[DONE]") continue;
               try {
                 const json = JSON.parse(payload);
-                const text = (json.candidates?.[0]?.content?.parts || [])
-                  .map(function (p) { return p.text || ""; }).join("");
+                const text = json.response || "";
                 if (text) controller.enqueue(encoder.encode(text));
-              } catch (e) { /* chunk parcial, se ignora */ }
+              } catch (e) { /* chunk parcial */ }
             }
           }
           controller.close();

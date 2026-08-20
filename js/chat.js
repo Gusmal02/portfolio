@@ -2,7 +2,7 @@
 (function () {
   "use strict";
 
-  var WORKER_URL = "https://portfolio-bot.your-subdomain.workers.dev"; // TODO: reemplazar tras desplegar
+  var WORKER_URL = "https://portfolio-bot.gustavo-a-maldonado-v.workers.dev";
   var MAX_HISTORY = 10;
 
   function esc(s) { return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }

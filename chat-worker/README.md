@@ -1,47 +1,36 @@
 # portfolio-bot — Chat de IA para el portafolio
 
 Proxy serverless (Cloudflare Worker) que expone el asistente del portafolio usando
-la API gratuita de Gemini (Flash-Lite). La API key nunca toca el frontend.
+**Cloudflare Workers AI** (modelo Llama 4 Scout). Sin llaves externas ni costos.
 
-## Setup (una sola vez, ~10 min)
+## Estado actual
 
-1. **Cuenta de AI Studio** (necesitas un Gmail):
-   - Ve a https://aistudio.google.com y entra con tu Gmail.
-   - Abre "Get API key" y crea una key (es gratuita, no pide tarjeta).
-   - Guárdala; la usarás en el paso 3.
+- Desplegado en: `https://portfolio-bot.gustavo-a-maldonado-v.workers.dev`
+- El frontend (`../js/chat.js`) ya apunta a esa URL.
 
-2. **Cuenta de Cloudflare**:
-   - Ve a https://dash.cloudflare.com/sign-up y crea cuenta gratuita.
+## ¿Por qué Workers AI y no Gemini?
 
-3. **Instalar wrangler y guardar la key**:
-   ```sh
-   cd chat-worker
-   npm install
-   npx wrangler login        # abre el navegador, autoriza
-   npx wrangler secret put GEMINI_API_KEY   # pega la key de Gemini
-   ```
+Google migró sus claves API al nuevo formato `AQ.` (Authentication Keys), que por
+2026 no funcionan con llamadas REST directas (`x-goog-api-key` / `Bearer`). Es un
+bug conocido en el foro oficial de Google. Workers AI es gratis, no pide llaves y
+usa la misma cuenta de Cloudflare.
 
-4. **Desplegar**:
-   ```sh
-   npx wrangler deploy
-   ```
-   Al terminar te da una URL tipo `https://portfolio-bot.<usuario>.workers.dev`.
-
-5. **Conectar el frontend**:
-   - En `../js/chat.js` reemplaza `WORKER_URL` por la URL del paso 4.
-   - Opcional: en `wrangler.toml`, en `ALLOWED_ORIGINS`, pon tu dominio
-     (ej. `https://gusmal02.github.io,http://localhost:8080`) para que solo
-     tu sitio pueda llamar al Worker.
-
-## Uso local
+## Comandos
 
 ```sh
-cd chat-worker
-npx wrangler dev            # arranca el worker en http://localhost:8787
+npm install          # instala wrangler
+npx wrangler login   # autenticación (una vez)
+npx wrangler deploy  # desplegar
+npx wrangler dev     # probar en local (http://localhost:8787)
 ```
 
-Para probar en local con la key, antes ejecuta `npx wrangler secret put
-GEMINI_API_KEY` (el `dev` también lee los secrets).
+## Configuración
+
+`wrangler.toml`:
+- `[ai] binding = "AI"` — binding de Workers AI.
+- `AI_MODEL` — modelo (`@cf/meta/llama-4-scout-17b-16e-instruct` por defecto).
+- `ALLOWED_ORIGINS` — lista de dominios permitidos (vacío = permitir todos).
+  Ejemplo: `https://gusmal02.github.io,http://localhost:8080`.
 
 ## Rate limiting (opcional)
 
@@ -59,11 +48,10 @@ binding = "RATE"
 id = "EL_ID_QUE_TE_DIO"
 ```
 
-Límites: 20 mensajes/minuto y 300/día por IP. Todo gratis dentro de la cuota
-diaria del plan Workers Free.
+Límites: 20 mensajes/minuto y 300/día por IP.
 
 ## Costos
 
-- Cloudflare Workers Free: 100,000 solicitudes/día gratuitas.
-- Gemini API free tier (Flash-Lite): 15 RPM / 1,000 solicitudes/día, sin tarjeta.
+- Cloudflare Workers Free: 100,000 solicitudes/día.
+- Workers AI Free: 10,000 neuronas/día (≈1,300 respuestas de chat).
 - Con el tráfico del portafolio: **$0**.
