@@ -1,7 +1,7 @@
 :root{
   --bg:#05070e; --bg2:#080b16; --ink:#f2f5fc; --muted:#98a1ba;
-  --c1:#ff4757; --c2:#e63946;
-  --c1-rgb:255,71,87; --c2-rgb:230,57,70;
+  --c1:#ff4757; --c2:#d90429; --c3:#ff6b5e; --c4:#8e162b;
+  --c1-rgb:255,71,87; --c2-rgb:217,4,41; --c3-rgb:255,107,94; --c4-rgb:142,22,43;
   --glass:rgba(255,255,255,.035);
   --line:rgba(255,255,255,.09);
   --maxw:1180px;
@@ -21,8 +21,8 @@ a{color:inherit}
 /* fondo */
 canvas#net{position:fixed;inset:0;z-index:0;opacity:.7}
 .aura{position:fixed;z-index:0;filter:blur(90px);pointer-events:none;border-radius:50%}
-.aura.a{width:60vw;height:60vw;top:-18vw;left:-12vw;background:radial-gradient(circle,rgba(var(--c2-rgb),.26),transparent 62%)}
-.aura.b{width:52vw;height:52vw;bottom:-20vw;right:-14vw;background:radial-gradient(circle,rgba(var(--c1-rgb),.18),transparent 62%)}
+.aura.a{width:60vw;height:60vw;top:-18vw;left:-12vw;background:radial-gradient(circle,rgba(var(--c3-rgb),.26),transparent 62%)}
+.aura.b{width:52vw;height:52vw;bottom:-20vw;right:-14vw;background:radial-gradient(circle,rgba(var(--c4-rgb),.34),transparent 62%)}
 .grain{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.04;mix-blend-mode:overlay;
   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
 .vignette{position:fixed;inset:0;z-index:1;pointer-events:none;
@@ -118,7 +118,7 @@ h1 .g{background:linear-gradient(115deg,var(--c1),var(--c2));-webkit-background-
   background:linear-gradient(180deg,rgba(var(--c2-rgb),.05),transparent);padding:16px 0;white-space:nowrap}
 .marquee .track{display:inline-flex;gap:44px;animation:scrollx 30s linear infinite;will-change:transform}
 .marquee span{font-family:var(--disp);font-weight:500;font-size:14.5px;color:var(--muted);letter-spacing:-.01em;display:inline-flex;align-items:center;gap:44px}
-.marquee span::after{content:'✦';color:rgba(var(--c1-rgb),.7);font-size:11px}
+.marquee span::after{content:'✦';color:rgba(var(--c3-rgb),.8);font-size:11px}
 @keyframes scrollx{to{transform:translateX(-50%)}}
 
 /* secciones */

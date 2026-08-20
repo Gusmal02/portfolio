@@ -305,6 +305,7 @@
   var canvas = document.getElementById("net");
   var ctx = canvas.getContext("2d");
   var parts = [];
+  var mouse = { x: -1e4, y: -1e4, active: false };
   function sizeCanvas() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
@@ -324,7 +325,7 @@
       p.x += p.vx; p.y += p.vy;
       if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
       if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
-      ctx.fillStyle = "rgba(230,57,70,.65)";
+      ctx.fillStyle = "rgba(217,4,41,.65)";
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
       ctx.fill();
@@ -340,6 +341,23 @@
           ctx.stroke();
         }
       }
+      if (mouse.active) {
+        var dmx = p.x - mouse.x, dmy = p.y - mouse.y, dm2 = dmx * dmx + dmy * dmy;
+        if (dm2 < 18000) {
+          var am = 1 - dm2 / 18000;
+          ctx.strokeStyle = "rgba(255,71,87," + (am * .5) + ")";
+          ctx.beginPath();
+          ctx.moveTo(p.x, p.y);
+          ctx.lineTo(mouse.x, mouse.y);
+          ctx.stroke();
+        }
+      }
+    }
+    if (mouse.active) {
+      ctx.fillStyle = "rgba(255,71,87,.9)";
+      ctx.beginPath();
+      ctx.arc(mouse.x, mouse.y, 2, 0, Math.PI * 2);
+      ctx.fill();
     }
     requestAnimationFrame(drawNet);
   }
@@ -352,10 +370,14 @@
 
     var glow = document.getElementById("glow");
     window.addEventListener("mousemove", function (e) {
+      mouse.x = e.clientX;
+      mouse.y = e.clientY;
+      mouse.active = true;
       glow.style.opacity = "1";
       glow.style.left = e.clientX + "px";
       glow.style.top = e.clientY + "px";
     });
+    document.addEventListener("mouseleave", function () { mouse.active = false; });
 
     var bar = document.getElementById("bar");
     var nav = document.getElementById("nav");
