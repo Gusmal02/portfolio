@@ -15,14 +15,6 @@
       sub: "Guía del portafolio",
       ph: "Pregúntame sobre mis proyectos…",
       send: "Enviar",
-      label: "¡Pregúntame!",
-      bubbleTitle: "¡Hola! Soy el asistente de Gustavo. ¿Qué quieres saber?",
-      q1: "¿Qué es Sofos?",
-      q1v: "Cuéntame qué es Sofos y qué hace",
-      q2: "Contacto",
-      q2v: "¿Cómo puedo contactar a Gustavo?",
-      q3: "Stack técnico",
-      q3v: "¿Cuál es tu stack técnico?",
       welcome: "¡Hola! Soy el asistente del portafolio de Gustavo. Pregúntame sobre sus proyectos, su stack técnico o cómo contactarlo.",
       thinking: "Gustavo está escribiendo…",
       err: "Ups, no pude responder. Inténtalo de nuevo o escribe a gustavo.a.maldonado.v@gmail.com."
@@ -33,14 +25,6 @@
       sub: "Portfolio guide",
       ph: "Ask me about my projects…",
       send: "Send",
-      label: "Ask me!",
-      bubbleTitle: "Hi! I'm Gustavo's assistant. What do you want to know?",
-      q1: "What is Sofos?",
-      q1v: "Tell me what Sofos is and what it does",
-      q2: "Contact",
-      q2v: "How can I contact Gustavo?",
-      q3: "Tech stack",
-      q3v: "What is your tech stack?",
       welcome: "Hi! I'm Gustavo's portfolio assistant. Ask me about his projects, tech stack, or how to reach him.",
       thinking: "Gustavo is typing…",
       err: "Oops, I couldn't respond. Try again or email gustavo.a.maldonado.v@gmail.com."
@@ -56,17 +40,6 @@
   var wrap = document.createElement("div");
   wrap.id = "chat";
   wrap.innerHTML =
-    '<span class="c-flame"></span>' +
-    '<span class="c-label" id="chatLabel"></span>' +
-    '<div class="c-bubble" id="chatBubble">' +
-      '<button class="c-x" id="chatBubbleClose" type="button" aria-label="close">&times;</button>' +
-      '<p id="chatBubbleText"></p>' +
-      '<div class="c-chips">' +
-        '<button class="chip" type="button" data-q=""></button>' +
-        '<button class="chip" type="button" data-q=""></button>' +
-        '<button class="chip" type="button" data-q=""></button>' +
-      '</div>' +
-    '</div>' +
     '<button id="chatOpen" type="button" aria-label="' + esc(t("open")) + '"><span class="c-mark"></span></button>' +
     '<div id="chatPanel" role="dialog" aria-hidden="true">' +
       '<div class="c-head"><div class="c-avatar"><span class="ping"></span></div>' +
@@ -84,15 +57,10 @@
   var input = document.getElementById("chatInput");
   var sendBtn = document.getElementById("chatSend");
   var closeBtn = document.getElementById("chatClose");
-  var labelEl = document.getElementById("chatLabel");
-  var bubble = document.getElementById("chatBubble");
-  var bubbleText = document.getElementById("chatBubbleText");
-  var bubbleClose = document.getElementById("chatBubbleClose");
-  var chips = bubble.querySelectorAll(".chip");
+  var bubble = null;
   var history = [];
   var busy = false;
   var interacted = false;
-  var bubbleTimer = null;
 
   function addMsg(role, text) {
     var div = document.createElement("div");
@@ -110,29 +78,12 @@
     openBtn.setAttribute("aria-label", t("open"));
     input.placeholder = t("ph");
     sendBtn.textContent = t("send");
-    labelEl.textContent = t("label");
-    bubbleText.textContent = t("bubbleTitle");
-    chips[0].textContent = t("q1"); chips[0].setAttribute("data-q", t("q1v"));
-    chips[1].textContent = t("q2"); chips[1].setAttribute("data-q", t("q2v"));
-    chips[2].textContent = t("q3"); chips[2].setAttribute("data-q", t("q3v"));
-  }
-
-  function hideBubble() {
-    bubble.classList.remove("show");
-    if (bubbleTimer) { clearTimeout(bubbleTimer); bubbleTimer = null; }
   }
 
   function stopAttention() {
     if (interacted) return;
     interacted = true;
     wrap.classList.add("stopped");
-    hideBubble();
-  }
-
-  function showBubbleOnce() {
-    if (interacted) return;
-    bubble.classList.add("show");
-    bubbleTimer = setTimeout(hideBubble, 12000);
   }
 
   function welcome() {
@@ -197,18 +148,9 @@
   input.addEventListener("keydown", function (e) {
     if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); ask(); }
   });
-  bubbleClose.addEventListener("click", stopAttention);
-  chips.forEach(function (chip) {
-    chip.addEventListener("click", function () {
-      openPanel();
-      input.value = chip.getAttribute("data-q");
-      ask();
-    });
-  });
 
   var langBtn = document.getElementById("langToggle");
   if (langBtn) langBtn.addEventListener("click", updateLabels);
 
   updateLabels();
-  setTimeout(showBubbleOnce, 1200);
 })();
