@@ -1,0 +1,7 @@
+name = "portfolio-bot"
+main = "src/index.js"
+compatibility_date = "2026-08-01"
+
+[vars]
+ALLOWED_ORIGINS = ""
+GEMINI_MODEL = "gemini-2.5-flash-lite"
