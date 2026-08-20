@@ -414,12 +414,29 @@
     window.addEventListener("resize", function () { sizeCanvas(); makeParts(); });
   }
 
+  /* ---------------- mailto: copiar email + abrir cliente ---------------- */
+  function wireMailto() {
+    var email = "gustavo.a.maldonado.v@gmail.com";
+    document.querySelectorAll('a[href^="mailto:"]').forEach(function (a) {
+      a.addEventListener("click", function (e) {
+        e.preventDefault();
+        var open = function () { window.location.href = "mailto:" + email; };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(email).then(open, open);
+        } else {
+          open();
+        }
+      });
+    });
+  }
+
   /* ---------------- init ---------------- */
   document.addEventListener("DOMContentLoaded", function () {
     lang = localStorage.getItem("gm-lang") || "es";
     renderAll();
     initEffects();
     animateTerminal();
+    wireMailto();
     document.getElementById("langToggle").addEventListener("click", function () {
       lang = lang === "es" ? "en" : "es";
       localStorage.setItem("gm-lang", lang);
