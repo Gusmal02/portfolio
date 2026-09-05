@@ -10,34 +10,34 @@
       nav_projects: "Proyectos",
       nav_logros: "Logros",
       nav_cta: "Hablemos →",
-      hero_eyebrow: "Security AI/ML Engineer · Ciudad de México",
-      hero_h1: "Construyo <span class=\"g\">plataformas de seguridad con IA</span> que piensan, ejecutan y dejan registro de todo.",
-      hero_lede: "Caza de amenazas con memoria episódica, pentesting autónomo con auditoría inmutable y detección de anomalías en grafos financieros. <b>17 años en infraestructura TI</b> y un portafolio respaldado por más de <b>1,200 tests automatizados</b>.",
+      hero_eyebrow: "AI Engineer & Data Scientist · Ciudad de México",
+      hero_h1: "Construyo <span class=\"g\">agentes LLM, pipelines RAG y modelos de ML</span> que resuelven problemas reales de negocio.",
+      hero_lede: "Agentes conversacionales con memoria persistente, RAG correctivo, scoring crediticio y detección de anomalías. Portafolio con repositorios públicos, métricas reales y más de <b>1,200 tests automatizados</b>.",
       hero_cta1: "Ver lo que construyo →",
       hero_cta2: "Hablemos",
-      hero_m1: "años en infraestructura TI",
-      hero_m2: "tests automatizados",
-      hero_m3: "detección en benchmark (Momus)",
+      hero_m1: "tests automatizados",
+      hero_m2: "detección en benchmark (Momus)",
+      hero_m3: "AUROC scoring crediticio",
       hero_m4: "alerta temprana (NEURAL-RMF)",
       chip1a: "Plataformas",
       chip2a: "Investigación",
       chip3a: "Portafolio",
       about_kick: "Quién soy",
-      about_h2: "De <span class=\"g\">17 años en infraestructura</span> a plataformas de IA para ciberseguridad.",
-      about_p1: "Soy <b>Gustavo Maldonado</b>, Security AI/ML Engineer en la Ciudad de México. Construyo sistemas de IA de grado producción: <b>caza de amenazas con memoria episódica</b>, <b>pentesting autónomo con auditoría inmutable</b> y <b>detección de anomalías en grafos financieros</b>.",
-      about_p2: "Aplico criterio de seguridad desde el diseño —Bandit SAST, Docker no-root, CI/CD, NIST AC-6— y tengo investigación propia en curso: alerta temprana de crisis epilépticas y detección sísmica en colaboración con el <b>NIED de Japón</b>.",
-      about_c1t: "Ciberseguridad",
-      about_c1s: "Threat hunting, pentesting, SAST, NIST AC-6, SIEM",
-      about_c2t: "IA Generativa",
-      about_c2s: "RAG, agentes LangGraph, Tool Calling, MCP",
-      about_c3t: "Investigación",
-      about_c3s: "NEURAL-RMF · EQ-RMF (NIED, Japón)",
-      about_c4t: "Grado producción",
-      about_c4s: "Docker no-root, CI/CD, Prometheus, Grafana",
+      about_h2: "AI Engineer & Data Scientist construyendo <span class=\"g\">agentes, RAG y ML</span> con métricas reales.",
+      about_p1: "Soy <b>Gustavo Maldonado</b>, AI Engineer & Data Scientist en la Ciudad de México. Construyo agentes LLM con memoria persistente, pipelines RAG correctivos y modelos de ML aplicados a casos reales: scoring crediticio, detección de fraude y anomalías en grafos financieros.",
+      about_p2: "Integro seguridad desde el origen en cada proyecto —Bandit SAST, Docker no-root, CI/CD, NIST AC-6— y tengo investigación propia en curso: alerta temprana de crisis epilépticas (NEURAL-RMF) y detección sísmica (EQ-RMF).",
+      about_c1t: "Agentes LLM",
+      about_c1s: "LangGraph, memoria episódica, Tool Calling, MCP, ReAct",
+      about_c2t: "RAG & Datos",
+      about_c2s: "CRAG, Qdrant, embeddings, Graph RAG, MLflow",
+      about_c3t: "Machine Learning",
+      about_c3s: "PyTorch, LightGBM, scikit-learn, scoring, anomalías",
+      about_c4t: "Investigación",
+      about_c4s: "NEURAL-RMF · EQ-RMF · RMF cuaterniónico",
       stack_kick: "Stack técnico",
-      stack_h2: "Tecnologías con las que <span class=\"g\">construyo y protejo</span>.",
+      stack_h2: "Tecnologías con las que <span class=\"g\">construyo y despliego</span>.",
       proj_kick: "Proyectos",
-      proj_h2: "Plataformas de <span class=\"g\">seguridad y ML</span> en mi portafolio.",
+      proj_h2: "Agentes, RAG y ML <span class=\"g\">con métricas reales</span> en mi portafolio.",
       proj_lede: "Sistemas de IA con ownership completo, métricas publicadas y suites de pruebas. Cada acción con trazabilidad.",
       proj_more_kick: "Más soluciones",
       logr_kick: "Logros y certificaciones",
@@ -53,34 +53,34 @@
       nav_projects: "Projects",
       nav_logros: "Milestones",
       nav_cta: "Let's talk →",
-      hero_eyebrow: "Security AI/ML Engineer · Mexico City",
-      hero_h1: "I build <span class=\"g\">AI-powered security platforms</span> that think, act, and log everything.",
-      hero_lede: "Threat hunting with episodic memory, autonomous pentesting with immutable audit trails, and anomaly detection on financial graphs. <b>17 years in IT infrastructure</b> and a portfolio backed by <b>1,200+ automated tests</b>.",
+      hero_eyebrow: "AI Engineer & Data Scientist · Mexico City",
+      hero_h1: "I build <span class=\"g\">LLM agents, RAG pipelines and ML models</span> that solve real business problems.",
+      hero_lede: "Conversational agents with persistent memory, corrective RAG, credit scoring, and anomaly detection. Portfolio with public repos, real metrics, and <b>1,200+ automated tests</b>.",
       hero_cta1: "View what I build →",
       hero_cta2: "Let's talk",
-      hero_m1: "years in IT infrastructure",
-      hero_m2: "automated tests",
-      hero_m3: "detection in benchmark (Momus)",
+      hero_m1: "automated tests",
+      hero_m2: "detection in benchmark (Momus)",
+      hero_m3: "AUROC credit scoring",
       hero_m4: "early warning (NEURAL-RMF)",
       chip1a: "Platforms",
       chip2a: "Research",
       chip3a: "Portfolio",
       about_kick: "Who I am",
-      about_h2: "From <span class=\"g\">17 years in infrastructure</span> to AI platforms for cybersecurity.",
-      about_p1: "I'm <b>Gustavo Maldonado</b>, a Security AI/ML Engineer in Mexico City. I build production-grade AI systems: <b>threat hunting with episodic memory</b>, <b>autonomous pentesting with immutable audit trails</b>, and <b>anomaly detection on financial graphs</b>.",
-      about_p2: "I apply security-by-design —Bandit SAST, non-root Docker, CI/CD, NIST AC-6— and I'm running my own research: early warning for epileptic crises and seismic detection in collaboration with <b>NIED (Japan)</b>.",
-      about_c1t: "Cybersecurity",
-      about_c1s: "Threat hunting, pentesting, SAST, NIST AC-6, SIEM",
-      about_c2t: "Generative AI",
-      about_c2s: "RAG, LangGraph agents, Tool Calling, MCP",
-      about_c3t: "Research",
-      about_c3s: "NEURAL-RMF · EQ-RMF (NIED, Japan)",
-      about_c4t: "Production-grade",
-      about_c4s: "Non-root Docker, CI/CD, Prometheus, Grafana",
+      about_h2: "AI Engineer & Data Scientist building <span class=\"g\">agents, RAG and ML</span> with real metrics.",
+      about_p1: "I'm <b>Gustavo Maldonado</b>, AI Engineer & Data Scientist in Mexico City. I build LLM agents with persistent memory, corrective RAG pipelines, and ML models applied to real cases: credit scoring, fraud detection, and graph anomaly detection.",
+      about_p2: "I integrate security-by-design in every project —Bandit SAST, non-root Docker, CI/CD, NIST AC-6— and I run my own research: early warning for epileptic crises (NEURAL-RMF) and seismic detection (EQ-RMF).",
+      about_c1t: "LLM Agents",
+      about_c1s: "LangGraph, episodic memory, Tool Calling, MCP, ReAct",
+      about_c2t: "RAG & Data",
+      about_c2s: "CRAG, Qdrant, embeddings, Graph RAG, MLflow",
+      about_c3t: "Machine Learning",
+      about_c3s: "PyTorch, LightGBM, scikit-learn, scoring, anomalies",
+      about_c4t: "Research",
+      about_c4s: "NEURAL-RMF · EQ-RMF · quaternionic RMF",
       stack_kick: "Technical stack",
-      stack_h2: "Technologies I <span class=\"g\">build with and protect</span>.",
+      stack_h2: "Technologies I <span class=\"g\">build and deploy with</span>.",
       proj_kick: "Projects",
-      proj_h2: "Security and ML <span class=\"g\">platforms</span> in my portfolio.",
+      proj_h2: "Agents, RAG and ML <span class=\"g\">with real metrics</span> in my portfolio.",
       proj_lede: "AI systems with full ownership, published metrics, and test suites. Every action with traceability.",
       proj_more_kick: "More solutions",
       logr_kick: "Milestones & certifications",
@@ -93,52 +93,22 @@
   };
 
   /* ---------------- data ---------------- */
-  var MARQUEE = ["Threat Hunting", "Pentesting autónomo", "IA Generativa", "RAG", "Detección de anomalías en grafos", "MLOps", "AIOps", "Purple Team", "MCP", "LangGraph", "NLP"];
+  var MARQUEE = ["Agentes LLM", "RAG Correctivo", "LangGraph", "Machine Learning", "Detección de anomalías en grafos", "MLflow", "MCP", "Tool Calling", "Scoring crediticio", "Automatización", "PyTorch", "NLP", "Embeddings"];
 
   var STACK = [
     { es: { t: "IA Generativa y LLMs", tags: ["LLM", "RAG", "CRAG", "LangGraph", "LangChain", "OpenAI", "Claude", "Gemini", "Ollama", "Qdrant", "ChromaDB", "Tool Calling", "Prompt Engineering", "MCP Server"] },
       en: { t: "Generative AI & LLMs", tags: ["LLM", "RAG", "CRAG", "LangGraph", "LangChain", "OpenAI", "Claude", "Gemini", "Ollama", "Qdrant", "ChromaDB", "Tool Calling", "Prompt Engineering", "MCP Server"] } },
     { es: { t: "ML, NLP y Grafos", tags: ["Python 3.12", "PyTorch", "scikit-learn", "LightGBM", "K-Means", "Isolation Forest", "GNN (S³)", "Anomaly Detection", "NLP", "MLflow"] },
       en: { t: "ML, NLP & Graphs", tags: ["Python 3.12", "PyTorch", "scikit-learn", "LightGBM", "K-Means", "Isolation Forest", "GNN (S³)", "Anomaly Detection", "NLP", "MLflow"] } },
-    { es: { t: "Ciberseguridad", tags: ["Threat Hunting", "Pentesting", "Purple Team", "eJPTv2", "SIEM Splunk", "Bandit SAST", "NIST AC-6", "ATT&CK", "DevSecOps"] },
-      en: { t: "Cybersecurity", tags: ["Threat Hunting", "Pentesting", "Purple Team", "eJPTv2", "SIEM Splunk", "Bandit SAST", "NIST AC-6", "ATT&CK", "DevSecOps"] } },
+    { es: { t: "Datos e Infraestructura", tags: ["PostgreSQL", "MongoDB", "Redis", "SQLite", "FastAPI", "N8N", "Pydantic", "Power BI", "Prometheus", "Grafana", "Bandit SAST"] },
+      en: { t: "Data & Infrastructure", tags: ["PostgreSQL", "MongoDB", "Redis", "SQLite", "FastAPI", "N8N", "Pydantic", "Power BI", "Prometheus", "Grafana", "Bandit SAST"] } },
     { es: { t: "Cloud y DevOps", tags: ["GCP Vertex AI", "AWS S3", "Terraform", "Docker", "Kubernetes", "GitHub Actions", "Prometheus", "Grafana", "FastAPI", "PostgreSQL", "Redis"] },
       en: { t: "Cloud & DevOps", tags: ["GCP Vertex AI", "AWS S3", "Terraform", "Docker", "Kubernetes", "GitHub Actions", "Prometheus", "Grafana", "FastAPI", "PostgreSQL", "Redis"] } }
   ];
 
   var FLAGSHIP = [
     {
-      n: "01", badge: "Threat Hunting", cat: "Defensa · IA",
-      es: { t: "Pantheon v2.1", tagline: "Plataforma autónoma de caza de amenazas con memoria episódica y scoring online.",
-        m: "397 tests · 0 fallos", b1: "Agente de investigación CRAG (Hermes) con LLM local, GFCN AttractorIndex en espacio 8D (Laser & Gravitational Score) sin reentrenamiento, y actualización automática desde Ares cerrando el loop purple team.",
-        b2: "Fail-closed por diseño, human-in-the-loop, audit trail con cadena de hashes y playbooks de contención validados." },
-      en: { t: "Pantheon v2.1", tagline: "Autonomous threat hunting platform with episodic memory and online scoring.",
-        m: "397 tests · 0 failures", b1: "CRAG investigation agent (Hermes) with a local LLM, online GFCN AttractorIndex in 8D space (Laser & Gravitational Score) with no retraining, and automatic updates from Ares closing the purple-team loop.",
-        b2: "Fail-closed by design, human-in-the-loop, hash-chained audit trail, and validated containment playbooks." },
-      tech: ["Python", "FastAPI", "LangGraph", "Ollama", "PostgreSQL", "Prometheus", "ATT&CK", "Docker"]
-    },
-    {
-      n: "02", badge: "Pentesting", cat: "Ofensivo · IA",
-      es: { t: "Ares v3.2", tagline: "Asistente de hacker ético con memoria episódica, auditoría inmutable y blindaje estructural.",
-        m: "555+ tests · Round 3", b1: "Reconocimiento autónomo con triaje ML, sandbox Docker aislado, gate de aprobación para acciones de alto riesgo y Vulcan IDA★ (Iterative Deepening A*) para la secuencia de explotación de mínimo CCI.",
-        b2: "Auditoría inmutable con hash encadenado SHA-256 y réplica opcional en S3 WORM; MCP Server (7 herramientas) y Purple Bridge bidireccional con Pantheon." },
-      en: { t: "Ares v3.2", tagline: "Ethical hacking assistant with episodic memory, immutable audit trail, and structural hardening.",
-        m: "555+ tests · Round 3", b1: "Autonomous reconnaissance with ML triage, isolated Docker sandbox, approval gate for high-risk actions, and Vulcan IDA* (Iterative Deepening A*) for the minimum accumulated-CCI exploitation sequence.",
-        b2: "Immutable audit trail with SHA-256 chained hashes and optional S3 WORM replication; MCP Server (7 tools) and a bidirectional Purple Bridge with Pantheon." },
-      tech: ["Python 3.12", "LangGraph", "Ollama", "ML", "Docker", "MCP", "S3 WORM"]
-    },
-    {
-      n: "03", badge: "Graph ML", cat: "Fraude · Grafos",
-      es: { t: "Helix", tagline: "Detección de anomalías en grafos sobre la esfera cuaterniónica S³ para fraude financiero.",
-        m: "AUC 0.9647 · AMLSim", b1: "Cada nodo recibe una rotación en S³: los nodos ilícitos generan patrones geométricos distinguibles (torque, inestabilidad, desviación). Selección automática de modelo (Helix/SAGE/GCN/MLP) por densidad del grafo.",
-        b2: "NEXUS y SONAR: scoring semi-supervisado que propaga riesgo desde semillas confirmadas sin reentrenamiento. AUC 0.9624 (Elliptic), 0.9565 (PaySim), 0.8899 (NF-UQ-NIDS)." },
-      en: { t: "Helix", tagline: "Graph anomaly detection over the unit quaternion sphere S³ for financial fraud.",
-        m: "AUC 0.9647 · AMLSim", b1: "Each node receives a rotation in S³: illicit nodes generate distinguishable geometric patterns (torque, instability, identity deviation). Automatic model selection (Helix/SAGE/GCN/MLP) based on graph density.",
-        b2: "NEXUS and SONAR: semi-supervised scorers that propagate risk from confirmed seeds without retraining. AUC 0.9624 (Elliptic), 0.9565 (PaySim), 0.8899 (NF-UQ-NIDS)." },
-      tech: ["Python", "PyTorch", "scikit-learn", "S³", "ChebyshevFNO", "GraphSAGE/GCN"]
-    },
-    {
-      n: "04", badge: "Autonomous Dev", cat: "Agentes · IA",
+      n: "01", badge: "Autonomous Dev", cat: "Agentes · IA",
       es: { t: "Sofos", tagline: "Co-desarrollador autónomo: describes tu idea y Sofos genera la aplicación completa.",
         m: "19 agentes · 17 nodos · 126 tests", b1: "Sistema multi-agente orquestado en LangGraph que convierte una descripción en lenguaje natural (o un spec JSON) en un proyecto fullstack listo para ejecutar: PostgreSQL con migraciones, API REST en FastAPI, frontend React, Docker Compose y tests.",
         b2: "War Room con memoria semántica y episódica, router de modelos LLM, edición incremental de proyectos vía architecture.json e integración con Momus QA que bloquea entregas con hallazgos BLOCKER. CI y export de datasets QLoRA." },
@@ -146,6 +116,36 @@
         m: "19 agents · 17 nodes · 126 tests", b1: "Multi-agent system orchestrated with LangGraph that turns a natural-language description (or a JSON spec) into a runnable fullstack project: PostgreSQL with migrations, FastAPI REST API, React frontend, Docker Compose, and tests.",
         b2: "War Room with semantic and episodic memory, an LLM model router, incremental project editing via architecture.json, and Momus QA integration that blocks deliveries on BLOCKER findings. CI and QLoRA dataset export." },
       tech: ["Python 3.12", "LangGraph", "Ollama", "FastAPI", "React", "Docker", "Qdrant"]
+    },
+    {
+      n: "02", badge: "QA Autónomo", cat: "Agentes · Seguridad",
+      es: { t: "Momus", tagline: "Agente de QA autónomo: detecta vulnerabilidades en APIs con 6/6 en benchmark.",
+        m: "6/6 bugs · 163 tests", b1: "Script/agente Python que consume la spec OpenAPI de una API y ejecuta pruebas conversacionales autónomas detectando auth bypass, IDOR, race conditions y SQLi. PoC de validación automática de APIs REST.",
+        b2: "6/6 bugs detectados autónomamente vs 0/6 en revisión manual. Multi-proveedor LLM con fallback. Integrado como gate de calidad en Sofos." },
+      en: { t: "Momus", tagline: "Autonomous QA agent: detects API vulnerabilities with 6/6 in benchmark.",
+        m: "6/6 bugs · 163 tests", b1: "Python script/agent that consumes an API's OpenAPI spec and runs autonomous conversational tests detecting auth bypass, IDOR, race conditions, and SQLi. PoC for automatic REST API validation.",
+        b2: "6/6 bugs detected autonomously vs 0/6 in manual review. Multi-provider LLM with fallback. Integrated as a quality gate inside Sofos." },
+      tech: ["Python", "LangGraph", "Claude API", "Ollama", "FastAPI", "pytest", "REST APIs"]
+    },
+    {
+      n: "03", badge: "RAG Empresarial", cat: "RAG · ML",
+      es: { t: "Resonance Engine", tagline: "RAG correctivo con reentrenamiento automático y ciclo cerrado de ML en producción.",
+        m: "What-If <2s · cobertura >80%", b1: "Plataforma RAG empresarial con CRAG correctivo sobre Qdrant — respuestas siempre citadas, nunca alucinadas. Ciclo cerrado de ML: modelo LightGBM se retrain automáticamente cuando mejora su AUC en producción.",
+        b2: "What-If Simulator con latencia <2s. Cobertura >80% en módulos core. Prometheus + Grafana integrados para observabilidad continua." },
+      en: { t: "Resonance Engine", tagline: "Corrective RAG with automatic retraining and closed-loop ML in production.",
+        m: "What-If <2s · coverage >80%", b1: "Enterprise RAG platform with CRAG over Qdrant — answers always cited, never hallucinated. Closed-loop ML: LightGBM model retrains automatically when its AUC improves in production.",
+        b2: "What-If Simulator with <2s latency. >80% coverage on core modules. Prometheus + Grafana integrated for continuous observability." },
+      tech: ["Python", "LangGraph", "Qdrant", "LightGBM", "FastAPI", "PostgreSQL", "Redis", "MLflow"]
+    },
+    {
+      n: "04", badge: "Graph ML", cat: "Fraude · Grafos",
+      es: { t: "Helix (GFCN)", tagline: "Detección de anomalías en grafos sobre la esfera cuaterniónica S³ para fraude financiero.",
+        m: "AUC 0.9647 · AMLSim", b1: "Cada nodo recibe una rotación en S³: los nodos ilícitos generan patrones geométricos distinguibles (torque, inestabilidad, desviación). Selección automática de modelo (Helix/SAGE/GCN/MLP) por densidad del grafo.",
+        b2: "NEXUS y SONAR: scoring semi-supervisado que propaga riesgo desde semillas confirmadas sin reentrenamiento. AUC 0.9624 (Elliptic), 0.9565 (PaySim), 0.8899 (NF-UQ-NIDS)." },
+      en: { t: "Helix (GFCN)", tagline: "Graph anomaly detection over the unit quaternion sphere S³ for financial fraud.",
+        m: "AUC 0.9647 · AMLSim", b1: "Each node receives a rotation in S³: illicit nodes generate distinguishable geometric patterns (torque, instability, identity deviation). Automatic model selection (Helix/SAGE/GCN/MLP) based on graph density.",
+        b2: "NEXUS and SONAR: semi-supervised scorers that propagate risk from confirmed seeds without retraining. AUC 0.9624 (Elliptic), 0.9565 (PaySim), 0.8899 (NF-UQ-NIDS)." },
+      tech: ["Python", "PyTorch", "scikit-learn", "S³", "ChebyshevFNO", "GraphSAGE/GCN"]
     }
   ];
 
@@ -173,15 +173,15 @@
   ];
 
   var STATS = [
-    { es: { v: "17+", l: "años en infraestructura TI" }, en: { v: "17+", l: "years in IT infrastructure" } },
+    { es: { v: "0.9958", l: "AUROC scoring crediticio" }, en: { v: "0.9958", l: "AUROC credit scoring" } },
     { es: { v: "1,200+", l: "tests automatizados" }, en: { v: "1,200+", l: "automated tests" } },
     { es: { v: "6/6", l: "detección en benchmark (Momus)" }, en: { v: "6/6", l: "detection in benchmark (Momus)" } },
     { es: { v: "67–88 min", l: "alerta temprana (NEURAL-RMF)" }, en: { v: "67–88 min", l: "early warning (NEURAL-RMF)" } }
   ];
 
   var LOGROS = [
-    { cat: "CARRERA", es: { t: "Especialista en Infraestructura TI", d: "Creative Service · Jun 2009 – Actualidad. 17 años gestionando entornos Windows, Linux y macOS en 500+ equipos." },
-      en: { t: "IT Infrastructure Specialist", d: "Creative Service · Jun 2009 – Present. 17 years managing Windows, Linux, and macOS environments across 500+ endpoints." } },
+    { cat: "CARRERA", es: { t: "Técnico de Soporte TI y Servicios Informáticos", d: "Creative Service · Jun 2009 – Actualidad. Gestión de entornos Windows, Linux y macOS en 500+ equipos con integración de herramientas de IA generativa." },
+      en: { t: "IT Support Technician & IT Services", d: "Creative Service · Jun 2009 – Present. Managing Windows, Linux, and macOS environments across 500+ endpoints with generative AI tooling integration." } },
     { cat: "INVESTIGACIÓN", es: { t: "Colaboración con el NIED de Japón", d: "Desarrollo de EQ-RMF, sistema de detección temprana de sismos con ventanas más amplias de monitoreo." },
       en: { t: "Collaboration with NIED (Japan)", d: "Building EQ-RMF, an early earthquake detection system with wider monitoring windows." } },
     { cat: "INVESTIGACIÓN", es: { t: "NEURAL-RMF", d: "Sistema de alerta temprana de crisis epilépticas focales: 95% de detección con 4 electrodos y 67–88 min de anticipación (CHB-MIT)." },
@@ -285,11 +285,11 @@
 
   /* ---------------- terminal ---------------- */
   var TERM = [
-    { cmd: "whoami", out: "security-ai-ml-engineer" },
-    { cmd: "cat stack.txt", out: "Python · LangGraph · PyTorch · GCP · AWS · MCP" },
-    { cmd: "ls projects/", out: "pantheon  ares  helix  sofos  momus  fraud-sentinel" },
-    { cmd: "./run pantheon --hunt", out: "[OK] 397 tests · fail-closed by design", ok: true },
-    { cmd: "./run helix --graph-aml", out: "[OK] AUC 0.9647 · Elliptic 0.9624", ok: true }
+    { cmd: "whoami", out: "ai-engineer-data-scientist" },
+    { cmd: "cat stack.txt", out: "Python · LangGraph · PyTorch · Qdrant · MLflow · MCP" },
+    { cmd: "ls projects/", out: "sofos  momus  resonance-engine  helix  credit-behavior-engine" },
+    { cmd: "./run sofos --build-app", out: "[OK] 126 tests · fullstack generated · CI/CD ready", ok: true },
+    { cmd: "./run credit-behavior-engine --score", out: "[OK] AUROC 0.9958 · Recall 100% · 96k clientes", ok: true }
   ];
   function sleep(ms) { return new Promise(function (r) { setTimeout(r, ms); }); }
   async function animateTerminal() {
