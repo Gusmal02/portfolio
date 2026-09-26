@@ -8,6 +8,7 @@
       nav_about: "Perfil",
       nav_stack: "Stack",
       nav_projects: "Proyectos",
+      nav_research: "Investigación",
       nav_logros: "Logros",
       nav_cta: "Hablemos →",
       hero_eyebrow: "AI Engineer & Data Scientist · Ciudad de México",
@@ -40,6 +41,9 @@
       proj_h2: "Agentes, RAG y ML <span class=\"g\">con métricas reales</span> en mi portafolio.",
       proj_lede: "Sistemas de IA con ownership completo, métricas publicadas y suites de pruebas. Cada acción con trazabilidad.",
       proj_more_kick: "Más soluciones",
+      res_kick: "Investigación",
+      res_h2: "Arquitecturas matemáticas originales <span class=\"g\">en campos de memoria resonante.</span>",
+      res_lede: "Sistemas de monitoreo sin entrenamiento supervisado basados en el framework RMF — osciladores cuaterniónicos en S³. Preprint publicado y código distribuido.",
       logr_kick: "Logros y certificaciones",
       logr_h2: "Hitos que <span class=\"g\">respaldan el trabajo</span>.",
       cta_kick: "Contacto",
@@ -51,6 +55,7 @@
       nav_about: "About",
       nav_stack: "Stack",
       nav_projects: "Projects",
+      nav_research: "Research",
       nav_logros: "Milestones",
       nav_cta: "Let's talk →",
       hero_eyebrow: "AI Engineer & Data Scientist · Mexico City",
@@ -83,6 +88,9 @@
       proj_h2: "Agents, RAG and ML <span class=\"g\">with real metrics</span> in my portfolio.",
       proj_lede: "AI systems with full ownership, published metrics, and test suites. Every action with traceability.",
       proj_more_kick: "More solutions",
+      res_kick: "Research",
+      res_h2: "Original mathematical architectures <span class=\"g\">in resonant memory fields.</span>",
+      res_lede: "Unsupervised monitoring systems built on the RMF framework — quaternionic oscillators on S³. Published preprint and distributed code.",
       logr_kick: "Milestones & certifications",
       logr_h2: "Milestones that <span class=\"g\">back the work</span>.",
       cta_kick: "Contact",
@@ -160,16 +168,53 @@
       en: { t: "Smart Onboarding CV", d: "Banking onboarding: vision (MobileNetV2) + scoring + rules. F1 0.93." }, tag: "Vision+ML", link: "https://github.com/Gusmal02/smart-onboarding-cv" },
     { es: { t: "ACO Route Optimizer", d: "Optimización de rutas última milla con Ant Colony Optimization. +13.75%." },
       en: { t: "ACO Route Optimizer", d: "Last-mile route optimization with Ant Colony Optimization. +13.75%." }, tag: "Optimización", link: "https://github.com/Gusmal02/ACO-Route-Optimizer" },
-    { es: { t: "NEURAL-RMF", d: "Preprint en Zenodo (DOI 10.5281/zenodo.22950874). Alerta temprana sin entrenamiento: 66/66 crisis detectadas con 4 electrodos, 67–88 min de anticipación (CHB-MIT + Siena)." },
-      en: { t: "NEURAL-RMF", d: "Preprint on Zenodo (DOI 10.5281/zenodo.22950874). Zero-training early warning: 66/66 seizures detected with 4 electrodes, 67–88 min advance (CHB-MIT + Siena)." }, tag: "Research", link: "papers/NEURAL_RMF_preprint_EN.pdf" },
-    { es: { t: "EQ-RMF", d: "Detección temprana de sismos M6.5+ en zonas de deslizamiento lento (SSE/ETS): ratios pre-6h de hasta 222× en 10 eventos M6.8–M8.3." },
-      en: { t: "EQ-RMF", d: "Early detection of M6.5+ quakes in slow-slip zones (SSE/ETS): pre-6h ratios up to 222× across 10 M6.8–M8.3 events." }, tag: "Research" },
     { es: { t: "Pharma-Agent-Stack", d: "Automatización de pedidos farmacéuticos con RAG empresarial (LangGraph, Gemini, Vertex AI Vector Search). Doble modo: nube o on-premise para datos sensibles." },
       en: { t: "Pharma-Agent-Stack", d: "Pharmaceutical order automation with enterprise RAG (LangGraph, Gemini, Vertex AI Vector Search). Dual mode: cloud or on-premise for sensitive data." }, tag: "RAG · Agentes", link: "https://github.com/Gusmal02/pharma-agent-stack" },
     { es: { t: "Fraude IEEE-CIS", d: "Fraude en e-commerce (IEEE-CIS): arquitectura neuro-simbólica en 3 capas (Isolation Forest + LightGBM) para minimizar falsos positivos." },
       en: { t: "IEEE-CIS Fraud", d: "E-commerce fraud (IEEE-CIS): 3-layer neuro-symbolic architecture (Isolation Forest + LightGBM) to minimize false positives." }, tag: "Fraude · ML", link: "https://github.com/Gusmal02/prevencion-fraude-neurosimbolico" },
     { es: { t: "AML Monitor", d: "Pipeline AML/CFT de monitoreo transaccional: capas basadas en reglas + K-Means no supervisado + DevSecOps con tests y CI." },
       en: { t: "AML Monitor", d: "AML/CFT transaction monitoring pipeline: rule-based layers + unsupervised K-Means + DevSecOps with tests and CI." }, tag: "AML · Fintech", link: "https://github.com/Gusmal02/prevencion_lavado_dinero" }
+  ];
+
+  var RESEARCH = [
+    {
+      key: "neural",
+      es: {
+        t: "NEURAL-RMF",
+        sub: "Alerta temprana de crisis epilépticas · Preprint publicado",
+        desc: "Sistema de monitoreo EEG sin entrenamiento supervisado basado en el framework de Campo de Memoria Resonante. Construye una referencia de estado basal y observa cómo la actividad posterior se desvía de ella. Salida comunicada como semáforo de riesgo: verde · amarillo · naranja · rojo.",
+        metrics: ["66/66 crisis detectadas", "4 electrodos bilaterales temporales", "67–88 min de anticipación", "CHB-MIT + Siena Scalp EEG"],
+        status: "Preprint publicado · Librería Python"
+      },
+      en: {
+        t: "NEURAL-RMF",
+        sub: "Epileptic seizure early warning · Published preprint",
+        desc: "Unsupervised EEG monitoring system based on the Resonant Memory Field framework. Builds an eight-minute basal reference and observes how subsequent activity departs from it. Output communicated as a risk traffic-light: green · yellow · orange · red.",
+        metrics: ["66/66 seizures detected", "4 bilateral temporal electrodes", "67–88 min advance warning", "CHB-MIT + Siena Scalp EEG"],
+        status: "Published preprint · Python library"
+      },
+      doi: "https://doi.org/10.5281/zenodo.22950874",
+      pdf: "papers/NEURAL_RMF_preprint_EN.pdf",
+      repo: "https://github.com/Gusmal02/NEURAL-RMF"
+    },
+    {
+      key: "eq",
+      es: {
+        t: "EQ-RMF",
+        sub: "Monitoreo sísmico de estado · Software de investigación",
+        desc: "Software de monitoreo sísmico por estación basado en RMF. Convierte ventanas continuas de forma de onda en una trayectoria de estado interpretable: cambio relativo al basal, persistencia, acuerdo entre estaciones y familia de trayectoria candidata. Orientado a revisión científica retrospectiva.",
+        metrics: ["Ratios pre-6h hasta 222×", "10 eventos M6.8–M8.3", "SSE/ETS en Guerrero, Nankai, Cascadia", "Binario compilado · API pública Python"],
+        status: "Software de investigación · Engine cerrado"
+      },
+      en: {
+        t: "EQ-RMF",
+        sub: "Seismic state monitoring · Research software",
+        desc: "Station-calibrated seismic monitoring software based on RMF. Turns continuous waveform windows into an interpretable state trajectory: baseline-relative change, persistence, station agreement, and candidate trajectory family. Intended for retrospective scientific review.",
+        metrics: ["Pre-6h ratios up to 222×", "10 events M6.8–M8.3", "SSE/ETS in Guerrero, Nankai, Cascadia", "Compiled binary · Public Python API"],
+        status: "Research software · Closed engine"
+      },
+      repo: "https://github.com/Gusmal02/EQ-RMF"
+    }
   ];
 
   var STATS = [
@@ -247,6 +292,28 @@
     wrap.innerHTML = html;
   }
 
+  function renderResearch() {
+    var wrap = document.getElementById("researchGrid");
+    if (!wrap) return;
+    var html = "";
+    RESEARCH.forEach(function (r) {
+      var d = r[lang];
+      var metrics = d.metrics.map(function (m) { return "<li>" + esc(m) + "</li>"; }).join("");
+      var links = "";
+      if (r.pdf) links += "<a class=\"rbtn rbtn-primary\" href=\"" + r.pdf + "\" target=\"_blank\" rel=\"noopener\">" + (lang === "es" ? "Leer preprint ↗" : "Read preprint ↗") + "</a>";
+      if (r.doi) links += "<a class=\"rbtn\" href=\"" + r.doi + "\" target=\"_blank\" rel=\"noopener\">DOI ↗</a>";
+      if (r.repo) links += "<a class=\"rbtn\" href=\"" + r.repo + "\" target=\"_blank\" rel=\"noopener\">GitHub ↗</a>";
+      html += "<div class=\"rcard reveal\">" +
+        "<div class=\"rcard-head\"><h3>" + esc(d.t) + "</h3><span class=\"rstatus\">" + esc(d.status) + "</span></div>" +
+        "<p class=\"rsub\">" + esc(d.sub) + "</p>" +
+        "<p class=\"rdesc\">" + esc(d.desc) + "</p>" +
+        "<ul class=\"rmetrics\">" + metrics + "</ul>" +
+        "<div class=\"rlinks\">" + links + "</div>" +
+        "</div>";
+    });
+    wrap.innerHTML = html;
+  }
+
   function renderStats() {
     var wrap = document.getElementById("statsBand");
     var html = "";
@@ -276,6 +343,7 @@
     renderStack();
     renderFlagship();
     renderMore();
+    renderResearch();
     renderStats();
     renderLogros();
     renderMarquee();

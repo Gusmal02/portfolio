@@ -248,3 +248,22 @@ footer a{color:var(--c1);text-decoration:none}
   .stats b{font-size:clamp(30px,9.5vw,42px)}
   footer .container{flex-direction:column;align-items:flex-start;text-align:left}
 }
+
+/* ── RESEARCH SECTION ─────────────────────────────────── */
+#investigacion{padding:80px 0}
+.research-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:28px;margin-top:40px}
+.rcard{background:var(--card);border:1px solid var(--bdr);border-radius:18px;padding:32px;display:flex;flex-direction:column;gap:14px;transition:border-color .25s,transform .25s}
+.rcard:hover{border-color:var(--c1);transform:translateY(-3px)}
+.rcard-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.rcard-head h3{margin:0;font-size:22px;font-weight:700;color:var(--ink)}
+.rstatus{font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--c1);background:color-mix(in srgb,var(--c1) 12%,transparent);border:1px solid color-mix(in srgb,var(--c1) 30%,transparent);padding:4px 10px;border-radius:20px;white-space:nowrap}
+.rsub{margin:0;font-size:13.5px;font-weight:600;color:var(--muted);letter-spacing:.02em}
+.rdesc{margin:0;font-size:14px;color:var(--sub);line-height:1.65}
+.rmetrics{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.rmetrics li{font-size:12.5px;font-weight:500;color:var(--ink);background:var(--surface);border:1px solid var(--bdr);border-radius:8px;padding:5px 12px}
+.rlinks{display:flex;gap:10px;flex-wrap:wrap;margin-top:4px}
+.rbtn{display:inline-flex;align-items:center;font-size:13px;font-weight:600;padding:9px 18px;border-radius:10px;text-decoration:none;transition:background .2s,color .2s,border-color .2s;border:1px solid var(--bdr);color:var(--sub)}
+.rbtn:hover{border-color:var(--c1);color:var(--c1)}
+.rbtn-primary{background:var(--c1);color:#000;border-color:var(--c1)}
+.rbtn-primary:hover{background:color-mix(in srgb,var(--c1) 85%,#fff);color:#000}
+@media(max-width:600px){.research-grid{grid-template-columns:1fr}.rcard{padding:22px}.rcard-head h3{font-size:19px}}
