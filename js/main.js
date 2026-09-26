@@ -160,8 +160,8 @@
       en: { t: "Smart Onboarding CV", d: "Banking onboarding: vision (MobileNetV2) + scoring + rules. F1 0.93." }, tag: "Vision+ML", link: "https://github.com/Gusmal02/smart-onboarding-cv" },
     { es: { t: "ACO Route Optimizer", d: "Optimización de rutas última milla con Ant Colony Optimization. +13.75%." },
       en: { t: "ACO Route Optimizer", d: "Last-mile route optimization with Ant Colony Optimization. +13.75%." }, tag: "Optimización", link: "https://github.com/Gusmal02/ACO-Route-Optimizer" },
-    { es: { t: "NEURAL-RMF", d: "Alerta temprana de crisis epilépticas focales con 4 electrodos: 95% de detección y 67–88 min de anticipación (CHB-MIT)." },
-      en: { t: "NEURAL-RMF", d: "Early warning for focal epileptic crises with 4 electrodes: 95% detection, 67–88 min advance (CHB-MIT)." }, tag: "Research" },
+    { es: { t: "NEURAL-RMF", d: "Preprint en Zenodo (DOI 10.5281/zenodo.22950874). Alerta temprana sin entrenamiento: 66/69 crisis detectadas con 4 electrodos, 67–88 min de anticipación (CHB-MIT + Siena)." },
+      en: { t: "NEURAL-RMF", d: "Preprint on Zenodo (DOI 10.5281/zenodo.22950874). Zero-training early warning: 66/69 seizures detected with 4 electrodes, 67–88 min advance (CHB-MIT + Siena)." }, tag: "Research", link: "https://doi.org/10.5281/zenodo.22950874" },
     { es: { t: "EQ-RMF", d: "Detección temprana de sismos M6.5+ en zonas de deslizamiento lento (SSE/ETS): ratios pre-6h de hasta 222× en 10 eventos M6.8–M8.3." },
       en: { t: "EQ-RMF", d: "Early detection of M6.5+ quakes in slow-slip zones (SSE/ETS): pre-6h ratios up to 222× across 10 M6.8–M8.3 events." }, tag: "Research" },
     { es: { t: "Pharma-Agent-Stack", d: "Automatización de pedidos farmacéuticos con RAG empresarial (LangGraph, Gemini, Vertex AI Vector Search). Doble modo: nube o on-premise para datos sensibles." },
@@ -176,7 +176,7 @@
     { es: { v: "0.9958", l: "AUROC scoring crediticio" }, en: { v: "0.9958", l: "AUROC credit scoring" } },
     { es: { v: "1,200+", l: "tests automatizados" }, en: { v: "1,200+", l: "automated tests" } },
     { es: { v: "6/6", l: "detección en benchmark (Momus)" }, en: { v: "6/6", l: "detection in benchmark (Momus)" } },
-    { es: { v: "67–88 min", l: "alerta temprana (NEURAL-RMF)" }, en: { v: "67–88 min", l: "early warning (NEURAL-RMF)" } }
+    { es: { v: "66/69", l: "crisis detectadas · preprint NEURAL-RMF (Zenodo)" }, en: { v: "66/69", l: "seizures detected · NEURAL-RMF preprint (Zenodo)" } }
   ];
 
   var LOGROS = [
@@ -184,8 +184,8 @@
       en: { t: "IT Support Technician & IT Services", d: "Creative Service · Jun 2009 – Present. Managing Windows, Linux, and macOS environments across 500+ endpoints with generative AI tooling integration." } },
     { cat: "INVESTIGACIÓN", es: { t: "Colaboración con el NIED de Japón", d: "Desarrollo de EQ-RMF, sistema de detección temprana de sismos con ventanas más amplias de monitoreo." },
       en: { t: "Collaboration with NIED (Japan)", d: "Building EQ-RMF, an early earthquake detection system with wider monitoring windows." } },
-    { cat: "INVESTIGACIÓN", es: { t: "NEURAL-RMF", d: "Sistema de alerta temprana de crisis epilépticas focales: 95% de detección con 4 electrodos y 67–88 min de anticipación (CHB-MIT)." },
-      en: { t: "NEURAL-RMF", d: "Early-warning system for focal epileptic crises: 95% detection with 4 electrodes and 67–88 min advance warning (CHB-MIT)." } },
+    { cat: "INVESTIGACIÓN", es: { t: "NEURAL-RMF — Preprint publicado en Zenodo", d: "Sistema sin entrenamiento de alerta temprana de crisis epilépticas: 66/69 crisis detectadas, 4 electrodos, 67–88 min de anticipación (CHB-MIT + Siena). DOI: 10.5281/zenodo.22950874." },
+      en: { t: "NEURAL-RMF — Preprint published on Zenodo", d: "Zero-training early-warning system for epileptic seizures: 66/69 detected, 4 electrodes, 67–88 min advance (CHB-MIT + Siena). DOI: 10.5281/zenodo.22950874." } },
     { cat: "PORTFOLIO", es: { t: "1,200+ tests automatizados", d: "Ares 555+, Pantheon 397, Helix 67, Momus 163 y más, con métricas publicadas." },
       en: { t: "1,200+ automated tests", d: "Ares 555+, Pantheon 397, Helix 67, Momus 163 and more, with published metrics." } },
     { cat: "CERT", es: { t: "eJPTv2 · Hacking Ético y Ciberseguridad", d: "Certificación en seguridad ofensiva y ciberseguridad." },
