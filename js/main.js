@@ -161,7 +161,7 @@
     { es: { t: "ACO Route Optimizer", d: "Optimización de rutas última milla con Ant Colony Optimization. +13.75%." },
       en: { t: "ACO Route Optimizer", d: "Last-mile route optimization with Ant Colony Optimization. +13.75%." }, tag: "Optimización", link: "https://github.com/Gusmal02/ACO-Route-Optimizer" },
     { es: { t: "NEURAL-RMF", d: "Preprint en Zenodo (DOI 10.5281/zenodo.22950874). Alerta temprana sin entrenamiento: 66/66 crisis detectadas con 4 electrodos, 67–88 min de anticipación (CHB-MIT + Siena)." },
-      en: { t: "NEURAL-RMF", d: "Preprint on Zenodo (DOI 10.5281/zenodo.22950874). Zero-training early warning: 66/66 seizures detected with 4 electrodes, 67–88 min advance (CHB-MIT + Siena)." }, tag: "Research", link: "https://doi.org/10.5281/zenodo.22950874" },
+      en: { t: "NEURAL-RMF", d: "Preprint on Zenodo (DOI 10.5281/zenodo.22950874). Zero-training early warning: 66/66 seizures detected with 4 electrodes, 67–88 min advance (CHB-MIT + Siena)." }, tag: "Research", link: "papers/NEURAL_RMF_preprint_EN.pdf" },
     { es: { t: "EQ-RMF", d: "Detección temprana de sismos M6.5+ en zonas de deslizamiento lento (SSE/ETS): ratios pre-6h de hasta 222× en 10 eventos M6.8–M8.3." },
       en: { t: "EQ-RMF", d: "Early detection of M6.5+ quakes in slow-slip zones (SSE/ETS): pre-6h ratios up to 222× across 10 M6.8–M8.3 events." }, tag: "Research" },
     { es: { t: "Pharma-Agent-Stack", d: "Automatización de pedidos farmacéuticos con RAG empresarial (LangGraph, Gemini, Vertex AI Vector Search). Doble modo: nube o on-premise para datos sensibles." },
