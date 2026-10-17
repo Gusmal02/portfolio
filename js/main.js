@@ -154,6 +154,16 @@
         m: "AUC 0.9647 · AMLSim", b1: "Each node receives a rotation in S³: illicit nodes generate distinguishable geometric patterns (torque, instability, identity deviation). Automatic model selection (Helix/SAGE/GCN/MLP) based on graph density.",
         b2: "NEXUS and SONAR: semi-supervised scorers that propagate risk from confirmed seeds without retraining. AUC 0.9624 (Elliptic), 0.9565 (PaySim), 0.8899 (NF-UQ-NIDS)." },
       tech: ["Python", "PyTorch", "scikit-learn", "S³", "ChebyshevFNO", "GraphSAGE/GCN"]
+    },
+    {
+      n: "05", badge: "Agente Determinista", cat: "Agentes · Gobernanza",
+      es: { t: "ProtoAgent Framework", tagline: "Motor de agentes locales con memoria y contratos: cero tokens de proveedor en la ruta de decisión.",
+        m: "18 tests · CI/CD · 0 LLM calls", b1: "Motor de agentes locales que convierte observaciones en acciones verificables sin llamar a un LLM en cada paso. Cada acción requiere hipótesis, criterio de aceptación, verificador independiente y presupuesto declarado. Si la especificación es ambigua, el agente reporta qué falta, sin inventar.",
+        b2: "Ejercitado en juegos y navegación (12/12 metas FrozenLake), SOC e investigación de incidentes (1.67 fuentes consultadas vs 2.73 del orden fijo, 0 hipótesis falsas), exploración matemática con certificados AM-GM y código con 543 comprobaciones. API pública importable como protoagent_framework. CI/CD en Windows y Ubuntu." },
+      en: { t: "ProtoAgent Framework", tagline: "Local agent engine with memory and contracts: zero provider tokens on the decision path.",
+        m: "18 tests · CI/CD · 0 LLM calls", b1: "Local agent engine that turns observations into verifiable actions without calling an LLM at each step. Every action requires a hypothesis, acceptance criterion, independent verifier, and declared budget. If the spec is ambiguous, the agent reports what is missing — it never invents.",
+        b2: "Exercised across games and navigation (12/12 goals FrozenLake), SOC incident investigation (1.67 sources consulted vs 2.73 for fixed order, 0 false hypotheses), mathematical exploration with AM-GM certificates, and code with 543 checks. Public API importable as protoagent_framework. CI/CD on Windows and Ubuntu." },
+      tech: ["Python 3.12", "Docker", "SQLite", "Node.js", "GitHub Actions", "Apache 2.0"]
     }
   ];
 
@@ -196,6 +206,24 @@
       doi: "https://doi.org/10.5281/zenodo.22950874",
       pdf: "papers/NEURAL_RMF_preprint_EN.pdf",
       repo: "https://github.com/Gusmal02/NEURAL-RMF"
+    },
+    {
+      key: "grafo",
+      es: {
+        t: "Grafo Resonante",
+        sub: "Biblioteca de exploración de conocimiento como red de relaciones · v0.1.0",
+        desc: "Biblioteca Python que organiza colecciones de documentos como una red de relaciones para que una persona, una aplicación o un agente de IA pueda encontrar pistas, seguir conexiones y volver a sus fuentes. AdaptiveRouter combina navegación estable y adaptación: la experiencia de uso puede influir en las prioridades del recorrido sin modificar el contenido original. No requiere proveedor de IA ni API key para ejecutar el núcleo.",
+        metrics: ["8 investigadores asistidos", "342 unidades · 21 fuentes", "Adaptación cambió búsquedas y aportó fuentes nuevas", "Núcleo local sin API key"],
+        status: "Biblioteca Python v0.1.0 · Apache 2.0"
+      },
+      en: {
+        t: "Resonance Graph",
+        sub: "Knowledge exploration library as a relation network · v0.1.0",
+        desc: "Python library that organizes document collections as a network of relations so a person, an application, or an AI agent can find clues, follow connections, and trace back to sources. AdaptiveRouter combines stable navigation and adaptation: usage experience can influence traversal priorities without modifying the original content. No AI provider or API key needed to run the core.",
+        metrics: ["8 assisted researchers", "342 units · 21 sources", "Adaptation changed searches and surfaced new sources", "Local core — no API key"],
+        status: "Python library v0.1.0 · Apache 2.0"
+      },
+      repo: "https://github.com/Gusmal02/resonance_graph"
     },
     {
       key: "eq",
@@ -353,9 +381,9 @@
   var TERM = [
     { cmd: "whoami", out: "ai-engineer-data-scientist" },
     { cmd: "cat stack.txt", out: "Python · LangGraph · PyTorch · Qdrant · MLflow · MCP" },
-    { cmd: "ls projects/", out: "sofos  momus  resonance-engine  helix  credit-behavior-engine" },
+    { cmd: "ls projects/", out: "sofos  momus  resonance-engine  helix  credit-behavior-engine  protoagent  resonance-graph" },
     { cmd: "./run sofos --build-app", out: "[OK] 126 tests · fullstack generated · CI/CD ready", ok: true },
-    { cmd: "./run credit-behavior-engine --score", out: "[OK] AUROC 0.9958 · Recall 100% · 96k clientes", ok: true }
+    { cmd: "./run protoagent --verify", out: "[OK] 18 tests · 0 LLM calls · contract governance · CI/CD Windows+Ubuntu", ok: true }
   ];
   function sleep(ms) { return new Promise(function (r) { setTimeout(r, ms); }); }
   async function animateTerminal() {
